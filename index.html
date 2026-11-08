@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloading ElectroQ AI Paper...</title>
+    
+    <!-- Automatically triggers the download when the page opens -->
+    <meta http-equiv="refresh" content="0; url=ElectroQ_AI_Details.pdf">
+    
+    <style>
+        body {
+            background-color: #080808;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            background: #151515;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #333;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.1);
+            max-width: 450px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: #ff3030;
+        }
+
+        p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ff3030;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ElectroQ <span>AI Papers</span></h1>
+        <p>Your paper download should start automatically in a moment.</p>
+        <p>If the download doesn't begin automatically, click the button below:</p>
+        
+        <a href="ElectroQ_AI_Details.pdf" download="ElectroQ_AI_Details.pdf" class="btn">
+            Download Paper (PDF)
+        </a>
+    </div>
+
+    <script>
+        // JS Fallback to trigger direct download immediately on load
+        window.onload = function() {
+            const link = document.createElement('a');
+            link.href = 'ElectroQ_AI_Details.pdf';
+            link.download = 'ElectroQ_AI_Details.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+
+</body>
+</html>
